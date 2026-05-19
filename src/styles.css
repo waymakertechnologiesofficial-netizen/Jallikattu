@@ -38,44 +38,48 @@
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.98 0.02 90);
-  --foreground: oklch(0.18 0.04 30);
-  --card: oklch(0.99 0.01 90);
-  --card-foreground: oklch(0.18 0.04 30);
+  /* Smoky ink theme — inspired by dry-ice bottle photography */
+  --background: oklch(0.96 0.005 240);
+  --foreground: oklch(0.15 0.01 240);
+  --card: oklch(0.99 0.003 240);
+  --card-foreground: oklch(0.15 0.01 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.04 30);
+  --popover-foreground: oklch(0.15 0.01 240);
 
-  /* Brand: deep maroon (logo wordmark) */
-  --primary: oklch(0.42 0.16 25);
-  --primary-foreground: oklch(0.98 0.02 90);
+  /* Brand: deep ink black (bottle label) */
+  --primary: oklch(0.18 0.01 250);
+  --primary-foreground: oklch(0.98 0.01 90);
 
-  /* Secondary: vibrant leaf green (logo border) */
-  --secondary: oklch(0.62 0.19 145);
-  --secondary-foreground: oklch(0.99 0 0);
+  /* Secondary: brand gold (label border) */
+  --secondary: oklch(0.78 0.14 80);
+  --secondary-foreground: oklch(0.15 0.01 250);
 
-  --muted: oklch(0.94 0.02 80);
-  --muted-foreground: oklch(0.45 0.04 40);
+  --muted: oklch(0.93 0.005 240);
+  --muted-foreground: oklch(0.45 0.01 240);
 
-  /* Accent: saffron / mango */
-  --accent: oklch(0.78 0.17 70);
-  --accent-foreground: oklch(0.18 0.04 30);
+  /* Accent: warm amber */
+  --accent: oklch(0.82 0.16 75);
+  --accent-foreground: oklch(0.15 0.01 250);
 
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.88 0.03 70);
-  --input: oklch(0.9 0.02 70);
-  --ring: oklch(0.62 0.19 145);
+  --border: oklch(0.88 0.005 240);
+  --input: oklch(0.9 0.005 240);
+  --ring: oklch(0.78 0.14 80);
 
-  --cream: oklch(0.96 0.04 85);
-  --saffron: oklch(0.78 0.17 70);
-  --leaf: oklch(0.62 0.19 145);
-  --berry: oklch(0.55 0.22 18);
+  --cream: oklch(0.97 0.01 90);
+  --saffron: oklch(0.82 0.16 75);
+  --leaf: oklch(0.55 0.13 200);
+  --berry: oklch(0.45 0.18 18);
+  --ink: oklch(0.12 0.01 250);
+  --smoke: oklch(0.88 0.005 240);
 
-  --gradient-hero: linear-gradient(135deg, oklch(0.62 0.19 145) 0%, oklch(0.78 0.17 70) 50%, oklch(0.55 0.22 18) 100%);
+  --gradient-hero: radial-gradient(ellipse at 30% 20%, oklch(0.35 0.02 240) 0%, oklch(0.12 0.01 250) 60%, oklch(0.06 0.005 250) 100%);
   --gradient-sun: radial-gradient(circle at 30% 30%, oklch(0.92 0.13 85), oklch(0.78 0.17 50) 60%, transparent 80%);
   --gradient-fizz: linear-gradient(180deg, oklch(0.95 0.08 85) 0%, oklch(0.85 0.16 60) 100%);
-  --shadow-bottle: 0 40px 80px -20px oklch(0.42 0.16 25 / 0.5), 0 20px 40px -10px oklch(0.55 0.22 18 / 0.3);
-  --shadow-glow: 0 0 60px oklch(0.78 0.17 70 / 0.6);
+  --gradient-smoke: linear-gradient(180deg, oklch(0.95 0.005 240 / 0) 0%, oklch(0.85 0.005 240 / 0.6) 50%, oklch(0.95 0.005 240 / 0) 100%);
+  --shadow-bottle: 0 50px 100px -20px oklch(0 0 0 / 0.6), 0 20px 40px -10px oklch(0.82 0.16 75 / 0.3);
+  --shadow-glow: 0 0 80px oklch(0.82 0.16 75 / 0.5);
 }
 
 @layer base {

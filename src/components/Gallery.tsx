@@ -1,14 +1,23 @@
 import { useEffect, useRef, useState } from "react";
-import bottleRed from "@/assets/bottle-red.png";
-import bottleGreen from "@/assets/bottle-green.png";
+import bottleClassic from "@/assets/bottle-classic.jpeg";
+import bottleStrawberry from "@/assets/bottle-strawberry.jpeg";
+import bottleMango from "@/assets/bottle-mango.jpeg";
+import bottleYellow from "@/assets/bottle-yellow.jpeg";
+import bottleBlueberry from "@/assets/bottle-blueberry.jpeg";
+import bottleOrange from "@/assets/bottle-orange.jpeg";
+import roseberry from "@/assets/roseberry.png";
+import orange from "@/assets/orange.png";
+import classic from "@/assets/classic.png";
+import lemon from "@/assets/lemon.png";
+import blueberry from "@/assets/bluberry.png";
 
 const ITEMS = [
-  { name: "Rose Berry", tag: "Sweet & Floral", note: "Bestseller", img: bottleRed, color: "oklch(0.78 0.18 18)", text: "oklch(0.99 0 0)" },
-  { name: "Classic Soda", tag: "Crystal Crisp", note: "Original 1946", img: bottleGreen, color: "oklch(0.62 0.19 145)", text: "oklch(0.99 0 0)" },
-  { name: "Mango Tango", tag: "Sun-ripe Burst", note: "Summer fave", img: bottleRed, color: "oklch(0.82 0.17 75)", text: "oklch(0.25 0.1 40)" },
-  { name: "Lemon Storm", tag: "Zesty Punch", note: "Bold zing", img: bottleGreen, color: "oklch(0.88 0.16 110)", text: "oklch(0.25 0.1 100)" },
-  { name: "Kala Khatta", tag: "Tangy Twist", note: "Street legend", img: bottleRed, color: "oklch(0.32 0.08 320)", text: "oklch(0.95 0.05 90)" },
-  { name: "Jeera Masala", tag: "Spice Spark", note: "Desi classic", img: bottleGreen, color: "oklch(0.45 0.1 60)", text: "oklch(0.95 0.05 90)" },
+  { name: "Straw Berry", tag: "Sweet & Floral", note: "Bestseller", img: roseberry, color: "oklch(0.42 0.18 18)", text: "oklch(0.99 0 0)" },
+  { name: "Classic Soda", tag: "Crystal Crisp", note: "Original 1946", img: classic, color: "oklch(0.32 0.04 240)", text: "oklch(0.99 0 0)" },
+  { name: "Orange Fizz", tag: "Citrus Spark", note: "Crowd favorite", img: orange, color: "oklch(0.72 0.18 60)", text: "oklch(0.2 0.05 40)" },
+  { name: "Pine Apple", tag: "Zesty Punch", note: "Bold zing", img: lemon, color: "oklch(0.85 0.18 105)", text: "oklch(0.2 0.05 100)" },
+  { name: "Blue Berry", tag: "Tangy Twist", note: "Street legend", img: blueberry, color: "oklch(0.4 0.15 260)", text: "oklch(0.95 0.05 90)" },
+ /*  { name: "Orange Fizz", tag: "Citrus Spark", note: "Crowd favorite", img: bottleOrange, color: "oklch(0.65 0.2 50)", text: "oklch(0.99 0 0)" }, */
 ];
 
 export function Gallery() {
